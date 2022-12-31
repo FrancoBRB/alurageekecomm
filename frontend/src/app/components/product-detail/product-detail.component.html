@@ -1,0 +1,24 @@
+<div class="container">
+  <div class="product">
+    <div class="image">
+      <img src="{{ productSelected.image }}" alt="product">
+    </div>
+    <div class="details">
+      <span class="title">{{ productSelected.name }}</span>
+      <span class="price">$ {{ productSelected.price }}</span>
+      <span class="desc">{{ productSelected.desc }}</span>
+    </div>
+  </div>
+  <div class="recommendations">
+    <span class="rec-title">Productos similares</span>
+    <div class="rec-gallery">
+      <div class="rec-card">
+        <img src="assets/product.png" alt="sample product" class="card-image" />
+        <span class="card-title"></span>
+        <span class="card-price">$ 120</span>
+        <a routerLink="2" class="card-view">Ver producto</a>
+      </div>
+    </div>
+  </div>
+</div>
+

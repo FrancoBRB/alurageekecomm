@@ -1,0 +1,9 @@
+<div class="container">
+  <form class="login-form" #loginForm= "ngForm" (ngSubmit)="login(loginForm)">
+    <span class="login-title">Iniciar Sesión</span>
+    <input type="email" name="email" class="login-email" ngModel placeholder="Escribra su correo electrónico">
+    <input type="password" name="password" class="login-password" ngModel placeholder="Escriba su contraseña">
+    <button type="submit" class="login-submit">Entrar</button>
+    <p class="text">*El servicio es unicamente para la administración de productos</p>
+  </form>
+</div>

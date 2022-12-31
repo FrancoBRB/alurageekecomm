@@ -1,0 +1,25 @@
+<div style="border-top: solid 1px #f5f5f5;">
+  <div class="container">
+    <div>
+      <app-modal *ngIf="modalSwitch" [id]="currentId"></app-modal>
+    </div>
+    <div class="navigation">
+      <span class="title">Administración de Productos</span>
+      <button class="product-add" routerLink="/new-product">Agregar producto</button>
+    </div>
+    <div class="product-container">
+      <div class="product-list">
+        <div class="product-card" *ngFor="let product of productList">
+          <img src="{{ product.image }}" alt="{{ product.name }}" class="card-image" />
+          <span class="card-title">{{ product.name }}</span>
+          <span class="card-price">$ {{ product.price }}</span>
+          <span>#000{{ product.id }}</span>
+          <div class="control-div">
+            <button class="product-add red" (click)="setCurrentId(product.id); openModal()">Eliminar</button>
+            <button [routerLink]="['/edit', product.id]" class="product-add green">Editar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

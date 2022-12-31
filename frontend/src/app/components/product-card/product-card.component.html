@@ -1,0 +1,10 @@
+<div class="card-container">
+  <img src="{{ product.image }}" alt="{{ product.name }}" class="card-image" />
+  <span class="card-title">{{ product.name }}</span>
+  <span class="card-price">$ {{ product.price }}</span>
+  <span class="card-link">
+      <a [routerLink]="['/products', product.id]" class="card-view">
+        Ver Producto
+      </a>
+    </span>
+</div>

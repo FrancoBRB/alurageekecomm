@@ -1,0 +1,142 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f5f5f5;
+    min-height: calc(100% - 421);
+    min-height: 70%;
+    min-height: -webkit-calc(100vh - 421px);
+    min-height: -moz-calc(100vh - 421px);
+    min-height: calc(100vh - 421px);
+  }
+  
+  .add-form {
+    display: flex;
+    flex-direction: column;
+    padding: 50px 50px;
+  }
+  
+  .add-title {
+    font-weight: bolder;
+    font-size: 18px;
+  }
+  
+  .add-field{
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  
+  .add-placeholder{
+    position: relative;
+    top: 25px;
+    right: -10px;
+    font-size: 11px;
+    color: #a2a2a2;
+  }
+  
+  .add-placeholder-category{
+    position: relative;
+    top: 17px;
+    right: -10px;
+    font-size: 11px;
+    color: #a2a2a2;
+  }
+
+  .alert{
+    max-width: 49vw;
+    background-color: #ec858f;
+    color: #542025;
+    padding: 10px;
+    border-radius: 4px;
+    border: solid 1px #542025;
+    margin-bottom: 15px;
+  }
+  
+  .error-text::first-letter{
+    text-transform: uppercase;
+  }
+  
+  .add-input {
+    margin: 5px 0;
+    width: 50vw;
+    height: 45px;
+    padding-top: 10px;
+    padding-left: 10px;
+    border: 0;
+    font-size: 16px;
+    border-bottom: solid 1px #a2a2a2;
+    border-radius: 4px;
+  }
+  
+  .add-input:focus {
+    outline: none;
+    box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
+  }
+  
+  #add-category{
+    width: 51vw;
+    height: 57px;
+    background-color: #fff;
+    border: 0;
+    border-bottom: solid 1px #a2a2a2;
+    border-radius: 4px;
+    padding-top: 10px;
+    padding-left: 10px;
+    font-size: 16px;
+  }
+  
+  .add-txtarea{
+    margin-top: 7.5px;
+    resize: none;
+    border: 0;
+    border-bottom: solid 1px #a2a2a2;
+    border-radius: 4px;
+    height: 75px;
+    padding: 10px;
+    padding-right: 0;
+    width: 50vw ;
+    font-size: 16px;
+  }
+  
+  .add-txtarea::placeholder{
+    font-size: 15px;
+  }
+  
+  .add-txtarea:focus{
+    box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
+    outline: none;
+  }
+  
+  .add-submit{
+    margin-top: 10px;
+    background-color: #2a7ae4;
+    width: 68px;
+    height: 40px;
+    color: #fff;
+    border: 0;
+    border-radius: 4px;
+  }
+  
+  .add-submit:hover {
+    background-color: #2461b1;
+    cursor: pointer;
+  }
+  
+  .add-submit:active {
+    box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
+  }
+  
+  @media (max-width:520px) {
+    .add-input{
+      width: 70vw;
+    }
+    .alert{
+      max-width: 70vw;
+    }
+    #add-category{
+      width: 73vw;
+    }
+    .add-txtarea{
+      width: 70vw;
+    }
+  }

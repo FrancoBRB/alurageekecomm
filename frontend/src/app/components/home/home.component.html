@@ -1,0 +1,51 @@
+<div class="banner">
+  <img src="assets/banner.png" alt="Banner" class="background-image" />
+  <div class="overlay">
+    <span class="title">Febrero Promocional</span>
+    <br />
+    Productos seleccionados 33% de descuento
+    <br />
+    <button class="banner-btn" [routerLink]="['/search/todos']">Ver productos</button>
+  </div>
+</div>
+
+<div class="container">
+  <!-- Star Wars -->
+  <div class="section">
+    <div class="section-controls">
+      <span class="section-title">Star Wars</span>
+      <span class="see-all"><a [routerLink]="['/search/star wars']" class="see-all-link">Ver todo <i class="fas fa-arrow-right"></i></a></span>
+    </div>
+    <div class="section-gallery">
+      <div class="section-card">
+        <app-product-card *ngFor="let product of starWars | slice:0:4" [product]="product"></app-product-card>
+      </div>
+    </div>
+  </div>
+
+  <!-- Consolas -->
+  <div class="section">
+    <div class="section-controls">
+      <span class="section-title">Consolas</span>
+      <span class="see-all"><a [routerLink]="['/search/console']" class="see-all-link">Ver todo <i class="fas fa-arrow-right"></i></a></span>
+    </div>
+    <div class="section-gallery">
+      <div class="section-card">
+        <app-product-card *ngFor="let product of consoles | slice:0:4" [product]="product"></app-product-card>
+      </div>
+    </div>
+  </div>
+
+  <!-- Diversos -->
+  <div class="section">
+    <div class="section-controls">
+      <span class="section-title">Diversos</span>
+      <span class="see-all"><a [routerLink]="['/search/divers']" class="see-all-link">Ver todo <i class="fas fa-arrow-right"></i></a></span>
+    </div>
+    <div class="section-gallery">
+      <div class="section-card">
+        <app-product-card *ngFor="let product of divers | slice:0:4" [product]="product"></app-product-card>
+      </div>
+    </div>
+  </div>
+</div>

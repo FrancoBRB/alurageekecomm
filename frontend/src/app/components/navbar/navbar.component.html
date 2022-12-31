@@ -1,0 +1,16 @@
+<div class="navbar">
+  <img routerLink="" class="logo" src="assets/logo.png" alt="Logo">
+  <form>
+    <input name="searchText" [(ngModel)]="searchText" type="text" class="navbar-search" placeholder="¿Qué deseas buscar?">
+    <button (click)="search(this.searchText)" class="btn-search"><i class="fas fa-search"></i></button>
+  </form>
+  <button routerLink="/login" class="btn-primary" *ngIf="!isLogedIn()">Login</button>
+  <button (click)="logout()" class="btn-primary red" *ngIf="isLogedIn()">Logout</button>
+  <i class="fas fa-search search-mobile" (click)="toogleBar()"></i>
+  <form class="container-mobile" *ngIf="this.searchBarMobile">
+    <input type="text" class="input-mobile" placeholder="¿Qué deseas buscar?" name="searchText" [(ngModel)]="searchText">
+    <button (click)="search(this.searchText)" class="btn-mobile" type="submit"><i class="fas fa-search"></i></button>
+  </form>
+</div>
+
+<app-admin-modal *ngIf="isLogedIn()"></app-admin-modal>

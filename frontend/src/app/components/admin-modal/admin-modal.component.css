@@ -1,0 +1,39 @@
+.modal{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #fff;
+    z-index: 999;
+    border: solid 1px #323232;
+    border-radius: 4px;
+    padding: 25px;
+    line-height: 30px;
+    opacity: .85;
+}
+
+.btn-primary {
+    background-color: #fff;
+    width: 75px;
+    height: 40px;
+    border: 1px solid #2A7AE4;
+    color: #2A7AE4;
+    border-radius: 4px;
+    margin-top: 10px;
+}
+
+.btn-primary:hover{
+    background-color: #2A7AE4;
+    color: #fff;
+    cursor: pointer;
+}
+
+.btn-primary:active{
+    box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
+}
+
+@media(max-width:540px) {
+    .modal{
+        padding: 15px;
+        font-size: 14px;
+    }
+}

@@ -1,0 +1,32 @@
+<div class="container">
+  <form class="add-form">
+    <div *ngIf="showError" class="alert">
+      <p class="error-text">{{ validateError }}</p>
+    </div>
+    <span class="add-title">Ingrese los nuevos valores para el producto {{productName}}</span>
+    <div class="add-field">
+      <input type="text" class="add-input" name="img" [(ngModel)]="productImg"/>
+      <span class="add-placeholder">URL de la imagen</span>
+    </div>
+    <div class="add-field">
+      <!-- <input type="text" class="add-input" /> -->
+      <select id="add-category" name="category" [(ngModel)]="productCategory">
+        <option value="stars-wars">Star Wars</option>
+        <option value="console">Consolas</option>
+        <option value="divers">Diversos</option>
+      </select>
+      <span class="add-placeholder-category">Categoría</span>
+    </div>
+    <div class="add-field">
+      <input type="text" class="add-input" name="name" [(ngModel)]="productName"/>
+      <span class="add-placeholder">Nombre del producto</span>
+    </div>
+    <div class="add-field">
+      <input type="numeric" class="add-input" name="price" [(ngModel)]="productPrice"/>
+      <span class="add-placeholder">Precio del producto</span>
+    </div>
+    <textarea class="add-txtarea" placeholder="Descripción del producto"
+    name="desc" [(ngModel)]="productDesc"></textarea>
+    <button class="add-submit" (click)="submitUpdate()">Editar</button>
+  </form>
+</div>

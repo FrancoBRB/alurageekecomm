@@ -1,0 +1,31 @@
+.card-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.card-image {
+  width: 250px;
+  height: 250px;
+}
+
+.card-title {
+  font-size: 14px;
+}
+
+.card-price {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.card-view {
+  text-decoration: none;
+  color: #2a7ae4;
+}
+
+.card-view:hover{
+  text-decoration: underline;
+}
+
+@media (max) {
+  
+}

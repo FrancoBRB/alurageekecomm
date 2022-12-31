@@ -1,0 +1,114 @@
+/* CONTAINER */
+.container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+
+/* PRODUCT LIST STYLES */
+
+.navigation {
+  display: flex;
+  align-items: center;
+}
+
+.product-add {
+  margin-left: auto;
+  background-color: #2a7ae4;
+  width: 120px;
+  height: 40px;
+  color: #fff;
+  border: 0;
+  border-radius: 4px;
+}
+
+.product-add:hover {
+  background-color: #2461b1;
+  cursor: pointer;
+}
+
+.product-add:active {
+  box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
+}
+
+.title {
+  font-size: 26px;
+}
+
+.product-list{
+    margin-top: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.product-card {
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+}
+
+.card-image {
+    width: 200px;
+}
+
+.card-title {
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+.card-price {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 25px;
+}
+
+.control-div{
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.red{
+  background-color: #dc3545;
+}
+
+.green{
+  background-color: #198754;
+}
+
+.red:hover {
+  background-color: #841f29;
+}
+
+.green:hover {
+  background-color: rgb(15, 89, 54)
+}
+
+@media (max-width:545px) {
+    .product-list{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0;
+    }
+}

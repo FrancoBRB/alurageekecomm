@@ -1,0 +1,85 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f5f5f5;
+  min-height: calc(100% - 421);
+  min-height: 70%;
+  min-height: -webkit-calc(100vh - 421px);
+  min-height: -moz-calc(100vh - 421px);
+  min-height: calc(100vh - 421px);
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 50px;
+}
+
+.login-title {
+  font-weight: bolder;
+  font-size: 18px;
+}
+
+.login-email {
+  margin: 20px 0;
+  width: 260px;
+  height: 41px;
+  border: 0;
+  padding: 0;
+  padding-left: 15px;
+  font-size: 16px;
+  border-bottom: solid 1px #a2a2a2;
+}
+
+.login-password {
+  width: 260px;
+  height: 41px;
+  border: 0;
+  padding: 0;
+  padding-left: 15px;
+  font-size: 16px;
+  border-bottom: solid 1px #a2a2a2;
+}
+
+.login-email:focus {
+  outline: none;
+  box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
+}
+
+.login-password:focus {
+  outline: none;
+  box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
+}
+
+.login-submit {
+  margin-top: 20px;
+  background-color: #2a7ae4;
+  width: 68px;
+  height: 40px;
+  color: #fff;
+  border: 0;
+  border-radius: 4px;
+}
+
+.login-submit:hover {
+  background-color: #2461b1;
+  cursor: pointer;
+}
+
+.login-submit:active {
+  box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
+}
+
+.text{
+  font-size: 11px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+@media (min-width:540px) {
+  .login-submit{
+    width: 275px;
+  }
+}

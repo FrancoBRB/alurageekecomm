@@ -1,0 +1,9 @@
+<div class="modal">
+  <div class="modal-content">
+    <span class="close" (click)="closeModal()">&times;</span>
+    <p>Esta seguro de eliminar el producto?</p>
+    <p><span class="bold">ID: </span> {{ productToDelete.id }}</p>
+    <p><span class="bold">Nombre: </span>{{ productToDelete.name }}</p>
+    <button class="confirm" (click)="closeModal(); confirmDelete();">Eliminar</button>
+  </div>
+</div>
